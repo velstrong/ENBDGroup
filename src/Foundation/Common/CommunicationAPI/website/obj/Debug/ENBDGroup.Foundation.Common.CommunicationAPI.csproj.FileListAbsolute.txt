@@ -5,3 +5,10 @@ D:\Projects\ENBDGroup\src\Foundation\Common\CommunicationAPI\website\obj\Debug\E
 D:\Projects\ENBDGroup\src\Foundation\Common\CommunicationAPI\website\obj\Debug\ENBDGroup.Foundation.Common.CommunicationAPI.dll
 D:\Projects\ENBDGroup\src\Foundation\Common\CommunicationAPI\website\obj\Debug\ENBDGroup.Foundation.Common.CommunicationAPI.pdb
 D:\Projects\ENBDGroup\src\Foundation\Common\CommunicationAPI\website\obj\Debug\ENBDGroup.Foundation.Common.CommunicationAPI.csprojAssemblyReference.cache
+D:\Projects\ENBD\ENBDGroup\src\Foundation\Common\CommunicationAPI\website\bin\ENBDGroup.Foundation.Common.CommunicationAPI.dll.config
+D:\Projects\ENBD\ENBDGroup\src\Foundation\Common\CommunicationAPI\website\bin\ENBDGroup.Foundation.Common.CommunicationAPI.dll
+D:\Projects\ENBD\ENBDGroup\src\Foundation\Common\CommunicationAPI\website\bin\ENBDGroup.Foundation.Common.CommunicationAPI.pdb
+D:\Projects\ENBD\ENBDGroup\src\Foundation\Common\CommunicationAPI\website\obj\Debug\ENBDGroup.Foundation.Common.CommunicationAPI.csprojAssemblyReference.cache
+D:\Projects\ENBD\ENBDGroup\src\Foundation\Common\CommunicationAPI\website\obj\Debug\ENBDGroup.Foundation.Common.CommunicationAPI.csproj.CopyComplete
+D:\Projects\ENBD\ENBDGroup\src\Foundation\Common\CommunicationAPI\website\obj\Debug\ENBDGroup.Foundation.Common.CommunicationAPI.dll
+D:\Projects\ENBD\ENBDGroup\src\Foundation\Common\CommunicationAPI\website\obj\Debug\ENBDGroup.Foundation.Common.CommunicationAPI.pdb
