@@ -417,7 +417,6 @@ D:\Projects\ENBD\ENBDGroup\src\Foundation\Common\Core\website\bin\System.Runtime
 D:\Projects\ENBD\ENBDGroup\src\Foundation\Common\Core\website\bin\System.Web.Http.xml
 D:\Projects\ENBD\ENBDGroup\src\Foundation\Common\Core\website\bin\System.Web.Http.WebHost.xml
 D:\Projects\ENBD\ENBDGroup\src\Foundation\Common\Core\website\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-D:\Projects\ENBD\ENBDGroup\src\Foundation\Common\Core\website\obj\Debug\ENBDGroup.Foundation.Common.Core.csprojAssemblyReference.cache
 D:\Projects\ENBD\ENBDGroup\src\Foundation\Common\Core\website\obj\Debug\ENBDGroup.Foundation.Common.Core.csproj.CopyComplete
 D:\Projects\ENBD\ENBDGroup\src\Foundation\Common\Core\website\obj\Debug\ENBDGroup.Foundation.Common.Core.dll
 D:\Projects\ENBD\ENBDGroup\src\Foundation\Common\Core\website\obj\Debug\ENBDGroup.Foundation.Common.Core.pdb

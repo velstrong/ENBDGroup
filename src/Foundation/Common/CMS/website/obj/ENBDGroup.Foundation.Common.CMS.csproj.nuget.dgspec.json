@@ -1,21 +1,21 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Projects\\ENBDGroup\\src\\Foundation\\Common\\CMS\\website\\ENBDGroup.Foundation.Common.CMS.csproj": {}
+    "D:\\Projects\\ENBD\\ENBDGroup\\src\\Foundation\\Common\\CMS\\website\\ENBDGroup.Foundation.Common.CMS.csproj": {}
   },
   "projects": {
-    "D:\\Projects\\ENBDGroup\\src\\Foundation\\Common\\CMS\\website\\ENBDGroup.Foundation.Common.CMS.csproj": {
+    "D:\\Projects\\ENBD\\ENBDGroup\\src\\Foundation\\Common\\CMS\\website\\ENBDGroup.Foundation.Common.CMS.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projects\\ENBDGroup\\src\\Foundation\\Common\\CMS\\website\\ENBDGroup.Foundation.Common.CMS.csproj",
+        "projectUniqueName": "D:\\Projects\\ENBD\\ENBDGroup\\src\\Foundation\\Common\\CMS\\website\\ENBDGroup.Foundation.Common.CMS.csproj",
         "projectName": "ENBDGroup.Foundation.Common.CMS",
-        "projectPath": "D:\\Projects\\ENBDGroup\\src\\Foundation\\Common\\CMS\\website\\ENBDGroup.Foundation.Common.CMS.csproj",
+        "projectPath": "D:\\Projects\\ENBD\\ENBDGroup\\src\\Foundation\\Common\\CMS\\website\\ENBDGroup.Foundation.Common.CMS.csproj",
         "packagesPath": "C:\\Users\\VEL\\.nuget\\packages\\",
-        "outputPath": "D:\\Projects\\ENBDGroup\\src\\Foundation\\Common\\CMS\\website\\obj\\",
+        "outputPath": "D:\\Projects\\ENBD\\ENBDGroup\\src\\Foundation\\Common\\CMS\\website\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "configFilePaths": [
-          "D:\\Projects\\ENBDGroup\\NuGet.Config",
+          "D:\\Projects\\ENBD\\ENBDGroup\\NuGet.Config",
           "C:\\Users\\VEL\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -29,11 +29,11 @@
         "frameworks": {
           "net48": {
             "projectReferences": {
-              "D:\\Projects\\ENBDGroup\\src\\Foundation\\Common\\Core\\website\\ENBDGroup.Foundation.Common.Core.csproj": {
-                "projectPath": "D:\\Projects\\ENBDGroup\\src\\Foundation\\Common\\Core\\website\\ENBDGroup.Foundation.Common.Core.csproj"
+              "D:\\Projects\\ENBD\\ENBDGroup\\src\\Foundation\\Common\\Core\\website\\ENBDGroup.Foundation.Common.Core.csproj": {
+                "projectPath": "D:\\Projects\\ENBD\\ENBDGroup\\src\\Foundation\\Common\\Core\\website\\ENBDGroup.Foundation.Common.Core.csproj"
               },
-              "D:\\Projects\\ENBDGroup\\src\\Foundation\\Common\\Search\\website\\ENBDGroup.Foundation.Common.Search.csproj": {
-                "projectPath": "D:\\Projects\\ENBDGroup\\src\\Foundation\\Common\\Search\\website\\ENBDGroup.Foundation.Common.Search.csproj"
+              "D:\\Projects\\ENBD\\ENBDGroup\\src\\Foundation\\Common\\Search\\website\\ENBDGroup.Foundation.Common.Search.csproj": {
+                "projectPath": "D:\\Projects\\ENBD\\ENBDGroup\\src\\Foundation\\Common\\Search\\website\\ENBDGroup.Foundation.Common.Search.csproj"
               }
             }
           }
@@ -85,23 +85,23 @@
         }
       }
     },
-    "D:\\Projects\\ENBDGroup\\src\\Foundation\\Common\\Core\\website\\ENBDGroup.Foundation.Common.Core.csproj": {
+    "D:\\Projects\\ENBD\\ENBDGroup\\src\\Foundation\\Common\\Core\\website\\ENBDGroup.Foundation.Common.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projects\\ENBDGroup\\src\\Foundation\\Common\\Core\\website\\ENBDGroup.Foundation.Common.Core.csproj",
+        "projectUniqueName": "D:\\Projects\\ENBD\\ENBDGroup\\src\\Foundation\\Common\\Core\\website\\ENBDGroup.Foundation.Common.Core.csproj",
         "projectName": "ENBDGroup.Foundation.Common.Core",
-        "projectPath": "D:\\Projects\\ENBDGroup\\src\\Foundation\\Common\\Core\\website\\ENBDGroup.Foundation.Common.Core.csproj"
+        "projectPath": "D:\\Projects\\ENBD\\ENBDGroup\\src\\Foundation\\Common\\Core\\website\\ENBDGroup.Foundation.Common.Core.csproj"
       },
       "frameworks": {
         "net48": {}
       }
     },
-    "D:\\Projects\\ENBDGroup\\src\\Foundation\\Common\\Search\\website\\ENBDGroup.Foundation.Common.Search.csproj": {
+    "D:\\Projects\\ENBD\\ENBDGroup\\src\\Foundation\\Common\\Search\\website\\ENBDGroup.Foundation.Common.Search.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projects\\ENBDGroup\\src\\Foundation\\Common\\Search\\website\\ENBDGroup.Foundation.Common.Search.csproj",
+        "projectUniqueName": "D:\\Projects\\ENBD\\ENBDGroup\\src\\Foundation\\Common\\Search\\website\\ENBDGroup.Foundation.Common.Search.csproj",
         "projectName": "ENBDGroup.Foundation.Common.Search",
-        "projectPath": "D:\\Projects\\ENBDGroup\\src\\Foundation\\Common\\Search\\website\\ENBDGroup.Foundation.Common.Search.csproj"
+        "projectPath": "D:\\Projects\\ENBD\\ENBDGroup\\src\\Foundation\\Common\\Search\\website\\ENBDGroup.Foundation.Common.Search.csproj"
       },
       "frameworks": {
         "net48": {}

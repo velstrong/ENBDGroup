@@ -208,7 +208,6 @@ D:\Projects\ENBD\ENBDGroup\src\Foundation\Common\Content\website\bin\System.Nume
 D:\Projects\ENBD\ENBDGroup\src\Foundation\Common\Content\website\bin\System.Runtime.CompilerServices.Unsafe.xml
 D:\Projects\ENBD\ENBDGroup\src\Foundation\Common\Content\website\bin\System.Web.Http.xml
 D:\Projects\ENBD\ENBDGroup\src\Foundation\Common\Content\website\bin\System.Web.Http.WebHost.xml
-D:\Projects\ENBD\ENBDGroup\src\Foundation\Common\Content\website\obj\Debug\ENBDGroup.Foundation.Common.Content.csprojAssemblyReference.cache
 D:\Projects\ENBD\ENBDGroup\src\Foundation\Common\Content\website\obj\Debug\ENBDGroup.Foundation.Common.Content.csproj.CopyComplete
 D:\Projects\ENBD\ENBDGroup\src\Foundation\Common\Content\website\obj\Debug\ENBDGroup.Foundation.Common.Content.dll
 D:\Projects\ENBD\ENBDGroup\src\Foundation\Common\Content\website\obj\Debug\ENBDGroup.Foundation.Common.Content.pdb
