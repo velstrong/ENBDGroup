@@ -1,0 +1,339 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\Projects\\Azure\\LivWebsite\\Src\\Foundation\\CMS\\code\\LivApp.Foundation.CMS.csproj": {}
+  },
+  "projects": {
+    "D:\\Projects\\Azure\\LivWebsite\\Src\\Foundation\\CMS\\code\\LivApp.Foundation.CMS.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Projects\\Azure\\LivWebsite\\Src\\Foundation\\CMS\\code\\LivApp.Foundation.CMS.csproj",
+        "projectName": "LivApp.Foundation.CMS",
+        "projectPath": "D:\\Projects\\Azure\\LivWebsite\\Src\\Foundation\\CMS\\code\\LivApp.Foundation.CMS.csproj",
+        "packagesPath": "C:\\Users\\VEL\\.nuget\\packages\\",
+        "outputPath": "D:\\Projects\\Azure\\LivWebsite\\Src\\Foundation\\CMS\\code\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "configFilePaths": [
+          "D:\\Projects\\Azure\\LivWebsite\\NuGet.Config",
+          "C:\\Users\\VEL\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net472"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {},
+          "https://sitecore.myget.org/F/sc-packages/api/v3/index.json": {}
+        },
+        "frameworks": {
+          "net472": {
+            "projectReferences": {
+              "D:\\Projects\\Azure\\LivWebsite\\Src\\Foundation\\Content\\code\\LivApp.Foundation.Content.csproj": {
+                "projectPath": "D:\\Projects\\Azure\\LivWebsite\\Src\\Foundation\\Content\\code\\LivApp.Foundation.Content.csproj"
+              },
+              "D:\\Projects\\Azure\\LivWebsite\\Src\\Foundation\\Core\\code\\LivApp.Foundation.Core.csproj": {
+                "projectPath": "D:\\Projects\\Azure\\LivWebsite\\Src\\Foundation\\Core\\code\\LivApp.Foundation.Core.csproj"
+              },
+              "D:\\Projects\\Azure\\LivWebsite\\Src\\Foundation\\Logging\\code\\LivApp.Foundation.Logging.csproj": {
+                "projectPath": "D:\\Projects\\Azure\\LivWebsite\\Src\\Foundation\\Logging\\code\\LivApp.Foundation.Logging.csproj"
+              },
+              "D:\\Projects\\Azure\\LivWebsite\\Src\\Foundation\\ORM\\code\\LivApp.Foundation.ORM.csproj": {
+                "projectPath": "D:\\Projects\\Azure\\LivWebsite\\Src\\Foundation\\ORM\\code\\LivApp.Foundation.ORM.csproj"
+              },
+              "D:\\Projects\\Azure\\LivWebsite\\Src\\Foundation\\Search\\code\\LivApp.Foundation.Search.csproj": {
+                "projectPath": "D:\\Projects\\Azure\\LivWebsite\\Src\\Foundation\\Search\\code\\LivApp.Foundation.Search.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {
+          "dependencies": {
+            "Glass.Mapper.Sc.93.Mvc": {
+              "target": "Package",
+              "version": "[5.6.160, )"
+            },
+            "HtmlAgilityPack": {
+              "target": "Package",
+              "version": "[1.4.9.5, )"
+            },
+            "Microsoft.AspNet.Mvc": {
+              "target": "Package",
+              "version": "[5.2.4, )"
+            },
+            "Microsoft.AspNet.WebApi.Core": {
+              "target": "Package",
+              "version": "[5.2.4, )"
+            },
+            "Microsoft.AspNet.WebApi.WebHost": {
+              "target": "Package",
+              "version": "[5.2.4, )"
+            }
+          }
+        }
+      },
+      "runtimes": {
+        "win": {
+          "#import": []
+        },
+        "win-x64": {
+          "#import": []
+        },
+        "win-x86": {
+          "#import": []
+        }
+      }
+    },
+    "D:\\Projects\\Azure\\LivWebsite\\Src\\Foundation\\Content\\code\\LivApp.Foundation.Content.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Projects\\Azure\\LivWebsite\\Src\\Foundation\\Content\\code\\LivApp.Foundation.Content.csproj",
+        "projectName": "LivApp.Foundation.Content",
+        "projectPath": "D:\\Projects\\Azure\\LivWebsite\\Src\\Foundation\\Content\\code\\LivApp.Foundation.Content.csproj",
+        "packagesPath": "C:\\Users\\VEL\\.nuget\\packages\\",
+        "outputPath": "D:\\Projects\\Azure\\LivWebsite\\Src\\Foundation\\Content\\code\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "configFilePaths": [
+          "D:\\Projects\\Azure\\LivWebsite\\NuGet.Config",
+          "C:\\Users\\VEL\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net472"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {},
+          "https://sitecore.myget.org/F/sc-packages/api/v3/index.json": {}
+        },
+        "frameworks": {
+          "net472": {
+            "projectReferences": {
+              "D:\\Projects\\Azure\\LivWebsite\\Src\\Foundation\\Logging\\code\\LivApp.Foundation.Logging.csproj": {
+                "projectPath": "D:\\Projects\\Azure\\LivWebsite\\Src\\Foundation\\Logging\\code\\LivApp.Foundation.Logging.csproj"
+              },
+              "D:\\Projects\\Azure\\LivWebsite\\Src\\Foundation\\ORM\\code\\LivApp.Foundation.ORM.csproj": {
+                "projectPath": "D:\\Projects\\Azure\\LivWebsite\\Src\\Foundation\\ORM\\code\\LivApp.Foundation.ORM.csproj"
+              },
+              "D:\\Projects\\Azure\\LivWebsite\\Src\\Foundation\\Search\\code\\LivApp.Foundation.Search.csproj": {
+                "projectPath": "D:\\Projects\\Azure\\LivWebsite\\Src\\Foundation\\Search\\code\\LivApp.Foundation.Search.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {
+          "dependencies": {
+            "Glass.Mapper.Sc.93.Mvc": {
+              "target": "Package",
+              "version": "[5.6.160, )"
+            }
+          }
+        }
+      },
+      "runtimes": {
+        "win": {
+          "#import": []
+        },
+        "win-x64": {
+          "#import": []
+        },
+        "win-x86": {
+          "#import": []
+        }
+      }
+    },
+    "D:\\Projects\\Azure\\LivWebsite\\Src\\Foundation\\Core\\code\\LivApp.Foundation.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Projects\\Azure\\LivWebsite\\Src\\Foundation\\Core\\code\\LivApp.Foundation.Core.csproj",
+        "projectName": "LivApp.Foundation.Core",
+        "projectPath": "D:\\Projects\\Azure\\LivWebsite\\Src\\Foundation\\Core\\code\\LivApp.Foundation.Core.csproj"
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    },
+    "D:\\Projects\\Azure\\LivWebsite\\Src\\Foundation\\Logging\\code\\LivApp.Foundation.Logging.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Projects\\Azure\\LivWebsite\\Src\\Foundation\\Logging\\code\\LivApp.Foundation.Logging.csproj",
+        "projectName": "LivApp.Foundation.Logging",
+        "projectPath": "D:\\Projects\\Azure\\LivWebsite\\Src\\Foundation\\Logging\\code\\LivApp.Foundation.Logging.csproj",
+        "packagesPath": "C:\\Users\\VEL\\.nuget\\packages\\",
+        "outputPath": "D:\\Projects\\Azure\\LivWebsite\\Src\\Foundation\\Logging\\code\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "configFilePaths": [
+          "D:\\Projects\\Azure\\LivWebsite\\NuGet.Config",
+          "C:\\Users\\VEL\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net472"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {},
+          "https://sitecore.myget.org/F/sc-packages/api/v3/index.json": {}
+        },
+        "frameworks": {
+          "net472": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {
+          "dependencies": {
+            "Microsoft.CodeDom.Providers.DotNetCompilerPlatform": {
+              "target": "Package",
+              "version": "[1.0.5, )"
+            },
+            "Microsoft.Extensions.DependencyInjection.Abstractions": {
+              "target": "Package",
+              "version": "[2.1.1, )"
+            },
+            "Microsoft.Net.Compilers": {
+              "target": "Package",
+              "version": "[2.1.0, )"
+            }
+          }
+        }
+      },
+      "runtimes": {
+        "win": {
+          "#import": []
+        },
+        "win-x64": {
+          "#import": []
+        },
+        "win-x86": {
+          "#import": []
+        }
+      }
+    },
+    "D:\\Projects\\Azure\\LivWebsite\\Src\\Foundation\\ORM\\code\\LivApp.Foundation.ORM.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Projects\\Azure\\LivWebsite\\Src\\Foundation\\ORM\\code\\LivApp.Foundation.ORM.csproj",
+        "projectName": "LivApp.Foundation.ORM",
+        "projectPath": "D:\\Projects\\Azure\\LivWebsite\\Src\\Foundation\\ORM\\code\\LivApp.Foundation.ORM.csproj",
+        "packagesPath": "C:\\Users\\VEL\\.nuget\\packages\\",
+        "outputPath": "D:\\Projects\\Azure\\LivWebsite\\Src\\Foundation\\ORM\\code\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "configFilePaths": [
+          "D:\\Projects\\Azure\\LivWebsite\\NuGet.Config",
+          "C:\\Users\\VEL\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net472"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {},
+          "https://sitecore.myget.org/F/sc-packages/api/v3/index.json": {}
+        },
+        "frameworks": {
+          "net472": {
+            "projectReferences": {
+              "D:\\Projects\\Azure\\LivWebsite\\Src\\Foundation\\Core\\code\\LivApp.Foundation.Core.csproj": {
+                "projectPath": "D:\\Projects\\Azure\\LivWebsite\\Src\\Foundation\\Core\\code\\LivApp.Foundation.Core.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {
+          "dependencies": {
+            "Glass.Mapper.Sc.93.Mvc": {
+              "target": "Package",
+              "version": "[5.6.160, )"
+            },
+            "Microsoft.Extensions.DependencyInjection.Abstractions": {
+              "target": "Package",
+              "version": "[2.1.1, )"
+            }
+          }
+        }
+      },
+      "runtimes": {
+        "win": {
+          "#import": []
+        },
+        "win-x64": {
+          "#import": []
+        },
+        "win-x86": {
+          "#import": []
+        }
+      }
+    },
+    "D:\\Projects\\Azure\\LivWebsite\\Src\\Foundation\\Search\\code\\LivApp.Foundation.Search.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Projects\\Azure\\LivWebsite\\Src\\Foundation\\Search\\code\\LivApp.Foundation.Search.csproj",
+        "projectName": "LivApp.Foundation.Search",
+        "projectPath": "D:\\Projects\\Azure\\LivWebsite\\Src\\Foundation\\Search\\code\\LivApp.Foundation.Search.csproj",
+        "packagesPath": "C:\\Users\\VEL\\.nuget\\packages\\",
+        "outputPath": "D:\\Projects\\Azure\\LivWebsite\\Src\\Foundation\\Search\\code\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "configFilePaths": [
+          "D:\\Projects\\Azure\\LivWebsite\\NuGet.Config",
+          "C:\\Users\\VEL\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net472"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {},
+          "https://sitecore.myget.org/F/sc-packages/api/v3/index.json": {}
+        },
+        "frameworks": {
+          "net472": {
+            "projectReferences": {
+              "D:\\Projects\\Azure\\LivWebsite\\Src\\Foundation\\ORM\\code\\LivApp.Foundation.ORM.csproj": {
+                "projectPath": "D:\\Projects\\Azure\\LivWebsite\\Src\\Foundation\\ORM\\code\\LivApp.Foundation.ORM.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {
+          "dependencies": {
+            "Glass.Mapper.Sc.93.Mvc": {
+              "target": "Package",
+              "version": "[5.6.160, )"
+            },
+            "Microsoft.CodeDom.Providers.DotNetCompilerPlatform": {
+              "target": "Package",
+              "version": "[1.0.5, )"
+            },
+            "Microsoft.Net.Compilers": {
+              "target": "Package",
+              "version": "[2.1.0, )"
+            }
+          }
+        }
+      },
+      "runtimes": {
+        "win": {
+          "#import": []
+        },
+        "win-x64": {
+          "#import": []
+        },
+        "win-x86": {
+          "#import": []
+        }
+      }
+    }
+  }
+}

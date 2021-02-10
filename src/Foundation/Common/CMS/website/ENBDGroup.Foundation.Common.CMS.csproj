@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{82C8BEE0-3AE0-422E-A9C7-6ED9398E0E42}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ENBDGroup.Foundation.Common.CMS</RootNamespace>
+    <AssemblyName>ENBDGroup.Foundation.Common.CMS</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication>enabled</IISExpressAnonymousAuthentication>
+    <IISExpressWindowsAuthentication>disabled</IISExpressWindowsAuthentication>
+    <IISExpressUseClassicPipelineMode>false</IISExpressUseClassicPipelineMode>
+    <UseGlobalApplicationHostFile />
+    <TargetFrameworkProfile />
+    <Use64BitIISExpress />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Sitecore.Client">
+      <HintPath>..\..\..\..\Dependencies\Sitecore.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.ContentSearch">
+      <HintPath>..\..\..\..\Dependencies\Sitecore.ContentSearch.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.Kernel">
+      <HintPath>..\..\..\..\Dependencies\Sitecore.Kernel.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.Mvc">
+      <HintPath>..\..\..\..\Dependencies\Sitecore.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.Speak.Applications">
+      <HintPath>..\..\..\..\Dependencies\Sitecore.Speak.Applications.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.Speak.Client">
+      <HintPath>..\..\..\..\Dependencies\Sitecore.Speak.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Extensions\HtmlStringExtension.cs" />
+    <Compile Include="Helpers\RazorViewHelper.cs" />
+    <Compile Include="Pipelines\InternalServerErrorResolver.cs" />
+    <Compile Include="Pipelines\ItemNotFoundResolver.cs" />
+    <Compile Include="Pipelines\LivSiteResolver.cs" />
+    <Compile Include="Pipelines\LivSiteInitializeRoutes.cs" />
+    <Compile Include="Pipelines\RobotsTxtProcessor.cs" />
+    <Compile Include="Pipelines\SitemapXmlProcessor.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Speak\Applications\InsertAnchor.cs" />
+    <Compile Include="Speak\Applications\JavascriptLinkForm.cs" />
+    <Compile Include="Speak\Applications\ExternalLinkForm.cs" />
+    <Compile Include="Speak\Applications\InsertLinkDialogTree.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Config\Include\Foundation\LivApp.Foundation.CMS.Pipelines.LivSiteResolver.config" />
+    <Content Include="App_Config\Include\Foundation\LivApp.Foundation.CMS.Pipelines.LivSiteInitializeRoutes.config" />
+    <Content Include="App_Config\Include\Foundation\LivApp.Foundation.CMS.Pipelines.ItemNotFoundResolver.config" />
+    <Content Include="App_Config\Include\Foundation\LivApp.Foundation.CMS.Pipelines.RobotTxtProcessor.config" />
+    <Content Include="App_Config\Include\Foundation\LivApp.Foundation.CMS.Pipelines.SitemapXmlProcessor.config" />
+    <Content Include="sitecore\shell\Applications\Dialogs\ExternalLink\ExternalLink.xml" />
+    <Content Include="sitecore\shell\Applications\Dialogs\JavascriptLink\JavascriptLink.xml" />
+    <Content Include="sitecore\shell\client\Applications\Dialogs\InsertLinkViaTreeDialog.js" />
+    <Content Include="App_Config\Include\Foundation\LivApp.Foundation.CMS.Pipelines.HtmlCacheClear.config" />
+    <None Include="App_Config\Include\Foundation\LivApp.Foundation.CMS.Pipelines.InternalServerErrorResolver.config" />
+    <Content Include="App_Config\Include\Security\LivApp.Foundation.CMS.Pipelines.DisableSQL.config" />
+    <Content Include="App_Config\Include\Security\LivApp.Foundation.CMS.Pipelines.MediaRequestProtectionSecret.config" />
+    <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
+    <None Include="Web.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Glass.Mapper.Sc.93.Mvc">
+      <Version>5.6.160</Version>
+    </PackageReference>
+    <PackageReference Include="HtmlAgilityPack">
+      <Version>1.4.9.5</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.AspNet.Mvc">
+      <Version>5.2.4</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.AspNet.WebApi.Core">
+      <Version>5.2.4</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.AspNet.WebApi.WebHost">
+      <Version>5.2.4</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions">
+      <Version>5.0.0</Version>
+    </PackageReference>
+    <PackageReference Include="System.Xml.Linq">
+      <Version>3.5.21022.801</Version>
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Core\website\ENBDGroup.Foundation.Common.Core.csproj">
+      <Project>{87e68542-523a-4f30-bbce-35dc067b3c95}</Project>
+      <Name>ENBDGroup.Foundation.Common.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Search\website\ENBDGroup.Foundation.Common.Search.csproj">
+      <Project>{fb17d1e5-9483-4dcd-b8ff-a782e38da50a}</Project>
+      <Name>ENBDGroup.Foundation.Common.Search</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>4630</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:4630/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,111 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\Projects\\ENBDGroup\\src\\Foundation\\Common\\CMS\\website\\ENBDGroup.Foundation.Common.CMS.csproj": {}
+  },
+  "projects": {
+    "D:\\Projects\\ENBDGroup\\src\\Foundation\\Common\\CMS\\website\\ENBDGroup.Foundation.Common.CMS.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Projects\\ENBDGroup\\src\\Foundation\\Common\\CMS\\website\\ENBDGroup.Foundation.Common.CMS.csproj",
+        "projectName": "ENBDGroup.Foundation.Common.CMS",
+        "projectPath": "D:\\Projects\\ENBDGroup\\src\\Foundation\\Common\\CMS\\website\\ENBDGroup.Foundation.Common.CMS.csproj",
+        "packagesPath": "C:\\Users\\VEL\\.nuget\\packages\\",
+        "outputPath": "D:\\Projects\\ENBDGroup\\src\\Foundation\\Common\\CMS\\website\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "configFilePaths": [
+          "D:\\Projects\\ENBDGroup\\NuGet.Config",
+          "C:\\Users\\VEL\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net48"
+        ],
+        "sources": {
+          "https://sitecore.myget.org/F/sc-packages/api/v3/index.json": {},
+          "https://www.nuget.org/api/v2/": {}
+        },
+        "frameworks": {
+          "net48": {
+            "projectReferences": {
+              "D:\\Projects\\ENBDGroup\\src\\Foundation\\Common\\Core\\website\\ENBDGroup.Foundation.Common.Core.csproj": {
+                "projectPath": "D:\\Projects\\ENBDGroup\\src\\Foundation\\Common\\Core\\website\\ENBDGroup.Foundation.Common.Core.csproj"
+              },
+              "D:\\Projects\\ENBDGroup\\src\\Foundation\\Common\\Search\\website\\ENBDGroup.Foundation.Common.Search.csproj": {
+                "projectPath": "D:\\Projects\\ENBDGroup\\src\\Foundation\\Common\\Search\\website\\ENBDGroup.Foundation.Common.Search.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net48": {
+          "dependencies": {
+            "Glass.Mapper.Sc.93.Mvc": {
+              "target": "Package",
+              "version": "[5.6.160, )"
+            },
+            "HtmlAgilityPack": {
+              "target": "Package",
+              "version": "[1.4.9.5, )"
+            },
+            "Microsoft.AspNet.Mvc": {
+              "target": "Package",
+              "version": "[5.2.4, )"
+            },
+            "Microsoft.AspNet.WebApi.Core": {
+              "target": "Package",
+              "version": "[5.2.4, )"
+            },
+            "Microsoft.AspNet.WebApi.WebHost": {
+              "target": "Package",
+              "version": "[5.2.4, )"
+            },
+            "Microsoft.Extensions.DependencyInjection.Abstractions": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "System.Xml.Linq": {
+              "target": "Package",
+              "version": "[3.5.21022.801, )"
+            }
+          }
+        }
+      },
+      "runtimes": {
+        "win": {
+          "#import": []
+        },
+        "win-x64": {
+          "#import": []
+        },
+        "win-x86": {
+          "#import": []
+        }
+      }
+    },
+    "D:\\Projects\\ENBDGroup\\src\\Foundation\\Common\\Core\\website\\ENBDGroup.Foundation.Common.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Projects\\ENBDGroup\\src\\Foundation\\Common\\Core\\website\\ENBDGroup.Foundation.Common.Core.csproj",
+        "projectName": "ENBDGroup.Foundation.Common.Core",
+        "projectPath": "D:\\Projects\\ENBDGroup\\src\\Foundation\\Common\\Core\\website\\ENBDGroup.Foundation.Common.Core.csproj"
+      },
+      "frameworks": {
+        "net48": {}
+      }
+    },
+    "D:\\Projects\\ENBDGroup\\src\\Foundation\\Common\\Search\\website\\ENBDGroup.Foundation.Common.Search.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Projects\\ENBDGroup\\src\\Foundation\\Common\\Search\\website\\ENBDGroup.Foundation.Common.Search.csproj",
+        "projectName": "ENBDGroup.Foundation.Common.Search",
+        "projectPath": "D:\\Projects\\ENBDGroup\\src\\Foundation\\Common\\Search\\website\\ENBDGroup.Foundation.Common.Search.csproj"
+      },
+      "frameworks": {
+        "net48": {}
+      }
+    }
+  }
+}
