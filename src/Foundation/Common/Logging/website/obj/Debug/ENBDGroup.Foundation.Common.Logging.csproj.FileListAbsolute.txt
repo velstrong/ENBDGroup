@@ -277,7 +277,6 @@ D:\Projects\ENBD\ENBDGroup\src\Foundation\Common\Logging\website\bin\System.Runt
 D:\Projects\ENBD\ENBDGroup\src\Foundation\Common\Logging\website\bin\System.Web.Http.xml
 D:\Projects\ENBD\ENBDGroup\src\Foundation\Common\Logging\website\bin\System.Web.Http.WebHost.xml
 D:\Projects\ENBD\ENBDGroup\src\Foundation\Common\Logging\website\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-D:\Projects\ENBD\ENBDGroup\src\Foundation\Common\Logging\website\obj\Debug\ENBDGroup.Foundation.Common.Logging.csprojAssemblyReference.cache
 D:\Projects\ENBD\ENBDGroup\src\Foundation\Common\Logging\website\obj\Debug\ENBDGroup.Foundation.Common.Logging.csproj.CopyComplete
 D:\Projects\ENBD\ENBDGroup\src\Foundation\Common\Logging\website\obj\Debug\ENBDGroup.Foundation.Common.Logging.dll
 D:\Projects\ENBD\ENBDGroup\src\Foundation\Common\Logging\website\obj\Debug\ENBDGroup.Foundation.Common.Logging.pdb
