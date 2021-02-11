@@ -248,8 +248,8 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Config\Include\Foundation\Foundation.ORM.RegisterContainer.config" />
-    <Content Include="App_Config\Include\Foundation\Foundation.ORM.RegisterMappings.config" />
+    <Content Include="App_Config\Include\Foundation\ENBDGroup.Foundation.Common.ORM.RegisterContainer.config" />
+    <Content Include="App_Config\Include\Foundation\ENBDGroup.Foundation.Common.ORM.RegisterMappings.config" />
     <Content Include="App_Config\Include\Glass\Glass.Mapper.Sc.config" />
     <Content Include="App_Config\Include\Glass\Glass.Mapper.Sc.Start.config" />
     <Content Include="App_Config\Include\Glass\z.Glass.Mapper.Sc.ViewRender.config.exclude" />

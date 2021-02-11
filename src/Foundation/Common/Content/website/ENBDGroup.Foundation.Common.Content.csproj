@@ -252,9 +252,11 @@
     <Compile Include="Repositories\IContextRepository.cs" />
     <Compile Include="Repositories\IRenderingRepository.cs" />
     <Compile Include="Repositories\RenderingRepository.cs" />
+    <Compile Include="Services\BaseService.cs" />
+    <Compile Include="Services\IBaseService.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Config\Include\Foundation\Foundation.Content.RegisterContainer.config" />
+    <Content Include="App_Config\Include\Foundation\ENBDGroup.Foundation.Common.Content.RegisterContainer.config" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -262,6 +264,16 @@
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Logging\website\ENBDGroup.Foundation.Common.Logging.csproj">
+      <Project>{1373BEA6-EEB6-439C-BE12-FC56F419520B}</Project>
+      <Name>ENBDGroup.Foundation.Common.Logging</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Search\website\ENBDGroup.Foundation.Common.Search.csproj">
+      <Project>{FB17D1E5-9483-4DCD-B8FF-A782E38DA50A}</Project>
+      <Name>ENBDGroup.Foundation.Common.Search</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

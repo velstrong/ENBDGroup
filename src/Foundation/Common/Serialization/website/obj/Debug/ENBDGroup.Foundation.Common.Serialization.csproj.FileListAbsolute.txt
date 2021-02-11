@@ -12,7 +12,7 @@ D:\Projects\ENBD\ENBDGroup\src\Foundation\Common\Serialization\website\bin\ENBDG
 D:\Projects\ENBD\ENBDGroup\src\Foundation\Common\Serialization\website\bin\ENBDGroup.Foundation.Common.Serialization.pdb
 D:\Projects\ENBD\ENBDGroup\src\Foundation\Common\Serialization\website\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
 D:\Projects\ENBD\ENBDGroup\src\Foundation\Common\Serialization\website\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-D:\Projects\ENBD\ENBDGroup\src\Foundation\Common\Serialization\website\obj\Debug\ENBDGroup.Foundation.Common.Serialization.csprojAssemblyReference.cache
 D:\Projects\ENBD\ENBDGroup\src\Foundation\Common\Serialization\website\obj\Debug\ENBDGroup.Foundation.Common.Serialization.csproj.CopyComplete
 D:\Projects\ENBD\ENBDGroup\src\Foundation\Common\Serialization\website\obj\Debug\ENBDGroup.Foundation.Common.Serialization.dll
 D:\Projects\ENBD\ENBDGroup\src\Foundation\Common\Serialization\website\obj\Debug\ENBDGroup.Foundation.Common.Serialization.pdb
+D:\Projects\ENBD\ENBDGroup\src\Foundation\Common\Serialization\website\obj\Debug\ENBDGroup.Foundation.Common.Serialization.csprojAssemblyReference.cache

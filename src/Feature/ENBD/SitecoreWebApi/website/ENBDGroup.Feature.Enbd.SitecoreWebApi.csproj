@@ -288,22 +288,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="App_Start\RazorGeneratorMvcStart.cs" />
     <Compile Include="Constants.cs" />
-    <Compile Include="DI\RegisterContainer.cs" />
-    <Compile Include="Factories\HeroViewModelFactory.cs" />
-    <Compile Include="Factories\IHeroViewModelFactory.cs" />
-    <Compile Include="Mediators\HeroMediator.cs" />
-    <Compile Include="Mediators\IHeroMediator.cs" />
-    <Compile Include="Models\IHero.cs" />
-    <Compile Include="Models\IHeroGlassBase.cs" />
-    <Compile Include="ORM\GlassMappings.cs" />
-    <Compile Include="ORM\RegisterMappings.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Routes\RegisterRoutes.cs" />
-    <Compile Include="Services\HeroService.cs" />
-    <Compile Include="Services\IHeroService.cs" />
-    <Compile Include="ViewModels\HeroViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Web.config" />
@@ -315,14 +301,8 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Config\Include\Feature\Feature.Hero.Mvc.config" />
-    <Content Include="App_Config\Include\Feature\Feature.Hero.RegisterContainer.config" />
-    <Content Include="App_Config\Include\Feature\Feature.Hero.RegisterMappings.config" />
-    <Content Include="App_Config\Include\Feature\Feature.Hero.Routes.config" />
     <None Include="packages.config" />
     <Content Include="Properties\launchSettings.json" />
-    <Content Include="Views\Hero\Error.cshtml" />
-    <Content Include="Views\Hero\Hero.cshtml" />
     <Content Include="Views\web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -348,7 +328,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Controllers\" />
+    <Folder Include="App_Config\Include\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -438,3 +438,4 @@ D:\Projects\ENBD\ENBDGroup\src\Foundation\Common\Search\website\bin\Microsoft.Co
 D:\Projects\ENBD\ENBDGroup\src\Foundation\Common\Search\website\obj\Debug\ENBDGroup.Foundation.Common.Search.csproj.CopyComplete
 D:\Projects\ENBD\ENBDGroup\src\Foundation\Common\Search\website\obj\Debug\ENBDGroup.Foundation.Common.Search.dll
 D:\Projects\ENBD\ENBDGroup\src\Foundation\Common\Search\website\obj\Debug\ENBDGroup.Foundation.Common.Search.pdb
+D:\Projects\ENBD\ENBDGroup\src\Foundation\Common\Search\website\obj\Debug\ENBDGroup.Foundation.Common.Search.csprojAssemblyReference.cache

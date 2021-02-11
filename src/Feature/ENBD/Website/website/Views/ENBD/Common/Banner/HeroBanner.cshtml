@@ -1,0 +1,28 @@
+﻿@model ENBDGroup.Feature.Enbd.Website.Banner.Models.IHeroBanner
+@using Glass.Mapper.Sc.Web.Mvc
+
+@if (Model != null)
+{
+    <section class="hero hero-with-header text-white @Model.CssClass">
+        @if (Sitecore.Context.PageMode.IsExperienceEditor)
+        {
+            <div class="image image-overlay image-top">
+                @Html.Glass().RenderImage(Model, x => x.BannerImage, isEditable: true)
+            </div>
+        }
+        else
+        {
+            <div class="image image-overlay image-top"
+                 style="background-image:url('@(Model.BannerImage!=null?Model.BannerImage.Src:"")')"></div>
+
+        }
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col text-shadow">
+                    <h1 class="mb-0">@Html.Glass().Editable(Model, x => x.BannerTitle)</h1>
+                    <p class="lead">@Html.Glass().Editable(Model, x => x.BannerDescription)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+}

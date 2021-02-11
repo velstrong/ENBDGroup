@@ -125,6 +125,9 @@
     <Reference Include="Mvp.Xml, Version=2.3.0.0, Culture=neutral, PublicKeyToken=6ead800d778c9b9f, processorArchitecture=MSIL">
       <HintPath>..\..\..\..\..\packages\Mvp.Xml.2.3.0\lib\net20\Mvp.Xml.dll</HintPath>
     </Reference>
+    <Reference Include="RazorGenerator.Mvc, Version=2.0.0.0, Culture=neutral, PublicKeyToken=7b26dc2a43f6a0d4, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\packages\RazorGenerator.Mvc.2.4.9\lib\net40\RazorGenerator.Mvc.dll</HintPath>
+    </Reference>
     <Reference Include="Sitecore.Framework.Conditions, Version=4.2.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\..\..\..\packages\Sitecore.Framework.Conditions.4.2.0\lib\netstandard2.0\Sitecore.Framework.Conditions.dll</HintPath>
     </Reference>
@@ -143,11 +146,17 @@
     <Reference Include="Sitecore.Logging.Client, Version=13.1.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\..\..\..\packages\Sitecore.Logging.Client.10.0.1\lib\net48\Sitecore.Logging.Client.dll</HintPath>
     </Reference>
+    <Reference Include="Sitecore.Mvc, Version=6.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\packages\Sitecore.Mvc.10.0.1\lib\net48\Sitecore.Mvc.dll</HintPath>
+    </Reference>
     <Reference Include="Sitecore.Nexus.Consumption, Version=1.0.0.0, Culture=neutral, PublicKeyToken=9de34fe2109de40c, processorArchitecture=MSIL">
       <HintPath>..\..\..\..\..\packages\Sitecore.Nexus.Consumption.1.2.0\lib\netstandard2.0\Sitecore.Nexus.Consumption.dll</HintPath>
     </Reference>
     <Reference Include="Sitecore.Nexus.Licensing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=9de34fe2109de40c, processorArchitecture=MSIL">
       <HintPath>..\..\..\..\..\packages\Sitecore.Nexus.Licensing.2.0.6\lib\netstandard2.0\Sitecore.Nexus.Licensing.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.Web, Version=6.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\packages\Sitecore.Web.10.0.1\lib\net48\Sitecore.Web.dll</HintPath>
     </Reference>
     <Reference Include="Sitecore.Zip, Version=12.2.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\..\..\..\packages\Sitecore.Zip.10.0.1\lib\net48\Sitecore.Zip.dll</HintPath>
@@ -217,6 +226,7 @@
       <HintPath>..\..\..\..\..\packages\Microsoft.AspNet.WebApi.WebHost.5.2.6\lib\net45\System.Web.Http.WebHost.dll</HintPath>
     </Reference>
     <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Web.Services" />
@@ -260,6 +270,9 @@
       <HintPath>..\..\..\..\..\packages\Newtonsoft.Json.12.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="System.Xml.Linq" />
+    <Reference Include="WebActivatorEx, Version=2.0.0.0, Culture=neutral, PublicKeyToken=7b26dc2a43f6a0d4, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\packages\WebActivatorEx.2.0.3\lib\net40\WebActivatorEx.dll</HintPath>
+    </Reference>
     <Reference Include="WebGrease">
       <Private>True</Private>
       <HintPath>..\..\..\..\..\packages\WebGrease.1.6.0\lib\WebGrease.dll</HintPath>
@@ -275,30 +288,15 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="App_Start\BundleConfig.cs" />
-    <Compile Include="App_Start\FilterConfig.cs" />
-    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="App_Start\RazorGeneratorMvcStart.cs" />
     <Compile Include="Constants.cs" />
-    <Compile Include="DI\RegisterContainer.cs" />
-    <Compile Include="Factories\HeroViewModelFactory.cs" />
-    <Compile Include="Factories\IHeroViewModelFactory.cs" />
-    <Compile Include="Global.asax.cs">
-      <DependentUpon>Global.asax</DependentUpon>
-    </Compile>
-    <Compile Include="Mediators\HeroMediator.cs" />
-    <Compile Include="Mediators\IHeroMediator.cs" />
-    <Compile Include="Models\IHero.cs" />
-    <Compile Include="Models\IHeroGlassBase.cs" />
-    <Compile Include="ORM\GlassMappings.cs" />
-    <Compile Include="ORM\RegisterMappings.cs" />
+    <Compile Include="Entities\Common\Banner\Controllers\BannerController.cs" />
+    <Compile Include="Entities\Common\Banner\Models\IHeroBanner.cs" />
+    <Compile Include="Entities\Common\Banner\Models\IVideoBanner.cs" />
+    <Compile Include="Entities\Common\Banner\Models\IYoutubeVideoBanner.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Routes\RegisterRoutes.cs" />
-    <Compile Include="Services\HeroService.cs" />
-    <Compile Include="Services\IHeroService.cs" />
-    <Compile Include="ViewModels\HeroViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Global.asax" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -307,21 +305,17 @@
       <DependentUpon>Web.config</DependentUpon>
     </Content>
     <Content Include="Views\Web.config" />
-    <Content Include="Views\_ViewStart.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App_Data\" />
-    <Folder Include="Controllers\" />
+    <Folder Include="App_Config\Include\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Config\Include\Feature\Feature.Hero.Mvc.config" />
-    <Content Include="App_Config\Include\Feature\Feature.Hero.RegisterContainer.config" />
-    <Content Include="App_Config\Include\Feature\Feature.Hero.RegisterMappings.config" />
-    <Content Include="App_Config\Include\Feature\Feature.Hero.Routes.config" />
     <None Include="packages.config" />
     <Content Include="Properties\launchSettings.json" />
-    <Content Include="Views\Hero\Error.cshtml" />
-    <Content Include="Views\Hero\Hero.cshtml" />
+    <Content Include="Views\ENBD\Common\Banner\HeroBanner.cshtml" />
+    <Content Include="Views\ENBD\Common\Banner\ParallaxBanner.cshtml" />
+    <Content Include="Views\ENBD\Common\Banner\VideoBanner.cshtml" />
+    <Content Include="Views\ENBD\Common\Banner\YoutubeVideoBanner.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\..\..\Foundation\Common\Content\website\ENBDGroup.Foundation.Common.Content.csproj">

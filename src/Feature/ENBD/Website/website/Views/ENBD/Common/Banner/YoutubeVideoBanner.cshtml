@@ -1,0 +1,37 @@
+﻿@model ENBDGroup.Feature.Enbd.Website.Banner.Models.IYoutubeVideoBanner
+@using Glass.Mapper.Sc.Web.Mvc
+@using LivApp.Foundation.Core.Extensions;
+@if (Model != null)
+{
+    <section class="pt-5 pb-0 py-md-5 text-white section ar-text-right section-block_1 section-block_card @Model.CssClass">
+        <div class="container">
+            <div class="row align-items-center justify-content-between  pt-5 py-md-0">
+                <div class="col-12 col-md-6 col-lg-6 text-left text-lg-left pt-md-0">
+                    <div class="d-none d-md-block">
+                        @using (Html.Glass().BeginRenderLink(Model, x => x.LogoLink, new { @title = (Model.LogoLink != null ? Model.LogoLink.Text : string.Empty) }.UpdateCustomAttributes(Model.Id, "Logo Link"), isEditable: true))
+                        {
+                            @Html.Glass().RenderImage(Model, x => x.LogoImage, new { @class = "navbar-logo navbar-logo-dark mb-3 mt-md-0" }, isEditable: true)
+                        }
+                    </div>
+                    <h1 class="display-3 strong mb-1">
+                        @Html.Glass().Editable(Model, x => x.Heading)
+
+                        <br>
+                        @Html.Glass().Editable(Model, x => x.SpinningText)
+                    </h1>
+
+                    <p class="lead"> @Html.Glass().Editable(Model, x => x.Description)</p>
+                    @Html.Glass().RenderLink(Model, x => x.CTALink, new { @title = (Model.CTALink != null ? Model.CTALink.Text : string.Empty), @class = "btn btn-sm btn-rounded btn-liv btn-liv-big px-3" }.UpdateCustomAttributes(Model.Id, "CTA Link"), isEditable: true)
+                </div>
+                <div class="col-12 col-md-6 col-lg-6 text-right pt-5 home-img-wrap">
+                    @if (!string.IsNullOrEmpty(Model.YoutubeVideoId))
+                    {
+                        <a href="javascript:void(0);" class="youtube_video_play" data-video-id="@Model.YoutubeVideoId">
+                            @Html.Glass().RenderImage(Model, x => x.BannerImage, new { @class = "mx-md-auto home-video" }, isEditable: true)
+                        </a>
+                    }
+                </div>
+            </div>
+        </div>
+    </section>
+}

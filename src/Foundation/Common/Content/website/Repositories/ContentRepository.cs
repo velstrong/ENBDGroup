@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using Glass.Mapper.Sc;
 using Glass.Mapper.Sc.Web;
 using Sitecore.Data.Items;
@@ -19,7 +20,7 @@ namespace ENBDGroup.Foundation.Common.Content.Repositories
 
         public T GetItem<T>(GetItemOptions options) where T : class
         {
-           return _requestContext.SitecoreService.GetItem<T>(options);
+            return _requestContext.SitecoreService.GetItem<T>(options);
         }
 
         public object GetItem(GetItemOptions options)
@@ -36,12 +37,18 @@ namespace ENBDGroup.Foundation.Common.Content.Repositories
         {
             return _requestContext.SitecoreService.GetItems(options);
         }
-
         public T CreateItem<T>(CreateOptions options) where T : class
         {
             return _requestContext.SitecoreService.CreateItem<T>(options);
         }
-
+        public T GetItem<T>(Guid id) where T : class
+        {
+            return _requestContext.SitecoreService.GetItem<T>(id);
+        }
+        public T GetItem<T>(Item item) where T : class
+        {
+            return _requestContext.SitecoreService.GetItem<T>(item);
+        }
         public object CreateItem(CreateOptions options)
         {
             return _requestContext.SitecoreService.CreateItem(options);

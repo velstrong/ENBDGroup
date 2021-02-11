@@ -26,5 +26,15 @@ namespace ENBDGroup.Foundation.Common.DI.Extensions
                 serviceCollection.AddTransient(controller);
             }
         }
+        //public static void AddAPIControllers(this IServiceCollection serviceCollection, params Assembly[] assemblies)
+        //{
+        //    var controllers = GetTypes.GetTypesImplementing<ServicesApiController>(assemblies)
+        //        .Where(controller => controller.Name.EndsWith("Controller", StringComparison.Ordinal));
+
+        //    foreach (var controller in controllers)
+        //    {
+        //        serviceCollection.AddTransient(controller);
+        //    }
+        //}
     }
 }
