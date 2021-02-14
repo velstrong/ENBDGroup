@@ -319,6 +319,7 @@
     <Content Include="App_Config\Include\Feature\Feature.Hero.RegisterContainer.config" />
     <Content Include="App_Config\Include\Feature\Feature.Hero.RegisterMappings.config" />
     <Content Include="App_Config\Include\Feature\Feature.Hero.Routes.config" />
+    <Content Include="App_Config\Include\Feature\Identity\ENBDGroup.Feature.Enbd.SitecoreWebApi.config" />
     <None Include="packages.config" />
     <Content Include="Properties\launchSettings.json" />
     <Content Include="Views\Hero\Error.cshtml" />
