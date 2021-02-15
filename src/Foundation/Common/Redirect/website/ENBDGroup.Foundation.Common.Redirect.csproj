@@ -252,8 +252,8 @@
     <Compile Include="Templates.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Config\Include\Foundation\LivApp.Foundation.Redirects.config" />
-    <Content Include="App_Config\Include\Foundation\LivApp.Foundation.Redirects.Fields.CustomNameValueList.config" />
+    <Content Include="App_Config\Include\Foundation\ENBDGroup.Foundation.Common.Redirect.config" />
+    <Content Include="App_Config\Include\Foundation\ENBDGroup.Foundation.Common.Redirect.Fields.CustomNameValueList.config" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

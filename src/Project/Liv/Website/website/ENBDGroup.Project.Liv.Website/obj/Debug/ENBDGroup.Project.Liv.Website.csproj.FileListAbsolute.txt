@@ -113,3 +113,4 @@ D:\Projects\ENBD\ENBDGroup\src\Project\Liv\Website\website\ENBDGroup.Project.Liv
 D:\Projects\ENBD\ENBDGroup\src\Project\Liv\Website\website\ENBDGroup.Project.Liv.Website\obj\Debug\ENBDGroup.Project.Liv.Website.csproj.CopyComplete
 D:\Projects\ENBD\ENBDGroup\src\Project\Liv\Website\website\ENBDGroup.Project.Liv.Website\obj\Debug\ENBDGroup.Project.Liv.Website.dll
 D:\Projects\ENBD\ENBDGroup\src\Project\Liv\Website\website\ENBDGroup.Project.Liv.Website\obj\Debug\ENBDGroup.Project.Liv.Website.pdb
+D:\Projects\ENBD\ENBDGroup\src\Project\Liv\Website\website\ENBDGroup.Project.Liv.Website\obj\Debug\ENBDGroup.Project.Liv.Website.csprojAssemblyReference.cache

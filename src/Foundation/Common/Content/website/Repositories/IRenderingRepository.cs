@@ -12,7 +12,7 @@ namespace ENBDGroup.Foundation.Common.Content.Repositories
         T GetRenderingItem<T>(GetKnownOptions options) where T : class;
         T GetRenderingItem<T>() where T : class;
         T GetRenderingParameters<T>() where T : class;
-
+        string GetRenderingParameters(string param);
         bool HasDataSource { get; }
         Item DataSourceItem { get; }
         string RenderingParameters { get; }

@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using Glass.Mapper.Sc;
 using Sitecore.Data.Items;
 
@@ -15,7 +16,8 @@ namespace ENBDGroup.Foundation.Common.Content.Repositories
         void SaveItem(SaveOptions options);
         void MoveItem(MoveByModelOptions options);
         void DeleteItem(DeleteByModelOptions options);
-
+        T GetItem<T>(Guid id) where T : class;
+        T GetItem<T>(Item item) where T : class;
         Item ContextItem { get; }
     }
 }

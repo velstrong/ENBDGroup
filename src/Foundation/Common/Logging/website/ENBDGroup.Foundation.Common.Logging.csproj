@@ -229,7 +229,7 @@
     <Compile Include="Repositories\LogRepository.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Config\Include\Foundation\Foundation.Logging.RegisterContainer.config" />
+    <Content Include="App_Config\Include\Foundation\ENBDGroup.Foundation.Common.Logging.RegisterContainer.config" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

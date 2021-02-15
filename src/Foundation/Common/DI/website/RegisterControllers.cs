@@ -9,7 +9,7 @@ namespace ENBDGroup.Foundation.Common.DI
         public void Configure(IServiceCollection serviceCollection)
         {
             serviceCollection.AddMvcControllers(
-                "Helixbase.Feature.*");
+                "ENBDGroup.Feature.*");
         }
     }
 }

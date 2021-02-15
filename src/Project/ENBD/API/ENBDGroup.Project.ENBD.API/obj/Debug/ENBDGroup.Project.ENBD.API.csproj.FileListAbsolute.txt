@@ -113,3 +113,4 @@ D:\Projects\ENBD\ENBDGroup\src\Project\ENBD\API\ENBDGroup.Project.ENBD.API\bin\M
 D:\Projects\ENBD\ENBDGroup\src\Project\ENBD\API\ENBDGroup.Project.ENBD.API\obj\Debug\ENBDGroup.Project.ENBD.API.csproj.CopyComplete
 D:\Projects\ENBD\ENBDGroup\src\Project\ENBD\API\ENBDGroup.Project.ENBD.API\obj\Debug\ENBDGroup.Project.ENBD.API.dll
 D:\Projects\ENBD\ENBDGroup\src\Project\ENBD\API\ENBDGroup.Project.ENBD.API\obj\Debug\ENBDGroup.Project.ENBD.API.pdb
+D:\Projects\ENBD\ENBDGroup\src\Project\ENBD\API\ENBDGroup.Project.ENBD.API\obj\Debug\ENBDGroup.Project.ENBD.API.csprojAssemblyReference.cache

@@ -211,3 +211,10 @@ D:\Projects\ENBD\ENBDGroup\src\Foundation\Common\Content\website\bin\System.Web.
 D:\Projects\ENBD\ENBDGroup\src\Foundation\Common\Content\website\obj\Debug\ENBDGroup.Foundation.Common.Content.csproj.CopyComplete
 D:\Projects\ENBD\ENBDGroup\src\Foundation\Common\Content\website\obj\Debug\ENBDGroup.Foundation.Common.Content.dll
 D:\Projects\ENBD\ENBDGroup\src\Foundation\Common\Content\website\obj\Debug\ENBDGroup.Foundation.Common.Content.pdb
+D:\Projects\ENBD\ENBDGroup\src\Foundation\Common\Content\website\obj\Debug\ENBDGroup.Foundation.Common.Content.csprojAssemblyReference.cache
+D:\Projects\ENBD\ENBDGroup\src\Foundation\Common\Content\website\bin\ENBDGroup.Foundation.Common.Logging.dll
+D:\Projects\ENBD\ENBDGroup\src\Foundation\Common\Content\website\bin\ENBDGroup.Foundation.Common.Logging.pdb
+D:\Projects\ENBD\ENBDGroup\src\Foundation\Common\Content\website\bin\ENBDGroup.Foundation.Common.Logging.dll.config
+D:\Projects\ENBD\ENBDGroup\src\Foundation\Common\Content\website\bin\ENBDGroup.Foundation.Common.Search.dll
+D:\Projects\ENBD\ENBDGroup\src\Foundation\Common\Content\website\bin\ENBDGroup.Foundation.Common.Search.pdb
+D:\Projects\ENBD\ENBDGroup\src\Foundation\Common\Content\website\bin\ENBDGroup.Foundation.Common.Search.dll.config
