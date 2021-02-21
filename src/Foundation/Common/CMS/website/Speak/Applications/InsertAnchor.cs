@@ -5,7 +5,7 @@ using System;
 using System.Runtime.CompilerServices;
 using System.Xml.Linq;
 
-namespace LivApp.Foundation.CMS.Speak.Applications
+namespace ENBDGroup.Foundation.Common.CMS.Speak.Applications
 {
     public class InsertAnchor : PageCodeBase
     {

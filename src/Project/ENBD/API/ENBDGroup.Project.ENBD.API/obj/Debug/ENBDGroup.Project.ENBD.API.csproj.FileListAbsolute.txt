@@ -110,7 +110,7 @@ D:\Projects\ENBD\ENBDGroup\src\Project\ENBD\API\ENBDGroup.Project.ENBD.API\bin\r
 D:\Projects\ENBD\ENBDGroup\src\Project\ENBD\API\ENBDGroup.Project.ENBD.API\bin\roslyn\VBCSCompiler.exe.config
 D:\Projects\ENBD\ENBDGroup\src\Project\ENBD\API\ENBDGroup.Project.ENBD.API\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
 D:\Projects\ENBD\ENBDGroup\src\Project\ENBD\API\ENBDGroup.Project.ENBD.API\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Projects\ENBD\ENBDGroup\src\Project\ENBD\API\ENBDGroup.Project.ENBD.API\obj\Debug\ENBDGroup.Project.ENBD.API.csprojAssemblyReference.cache
 D:\Projects\ENBD\ENBDGroup\src\Project\ENBD\API\ENBDGroup.Project.ENBD.API\obj\Debug\ENBDGroup.Project.ENBD.API.csproj.CopyComplete
 D:\Projects\ENBD\ENBDGroup\src\Project\ENBD\API\ENBDGroup.Project.ENBD.API\obj\Debug\ENBDGroup.Project.ENBD.API.dll
 D:\Projects\ENBD\ENBDGroup\src\Project\ENBD\API\ENBDGroup.Project.ENBD.API\obj\Debug\ENBDGroup.Project.ENBD.API.pdb
-D:\Projects\ENBD\ENBDGroup\src\Project\ENBD\API\ENBDGroup.Project.ENBD.API\obj\Debug\ENBDGroup.Project.ENBD.API.csprojAssemblyReference.cache

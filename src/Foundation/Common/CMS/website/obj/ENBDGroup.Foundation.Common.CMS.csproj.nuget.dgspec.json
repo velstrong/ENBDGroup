@@ -23,8 +23,8 @@
           "net48"
         ],
         "sources": {
-          "https://sitecore.myget.org/F/sc-packages/api/v3/index.json": {},
-          "https://www.nuget.org/api/v2/": {}
+          "https://api.nuget.org/v3/index.json": {},
+          "https://sitecore.myget.org/F/sc-packages/api/v3/index.json": {}
         },
         "frameworks": {
           "net48": {
@@ -64,7 +64,7 @@
             },
             "Microsoft.Extensions.DependencyInjection.Abstractions": {
               "target": "Package",
-              "version": "[5.0.0, )"
+              "version": "[2.1.1, )"
             },
             "System.Xml.Linq": {
               "target": "Package",

@@ -14,7 +14,7 @@ using Sitecore.Mvc.Pipelines;
 using Sitecore.Mvc.Pipelines.Response.GetPageItem;
 using Sitecore.Sites;
 
-namespace LivApp.Foundation.CMS.Pipelines
+namespace ENBDGroup.Foundation.Common.CMS.Pipelines
 {
     public class ItemNotFoundResolver : HttpRequestProcessor
     {

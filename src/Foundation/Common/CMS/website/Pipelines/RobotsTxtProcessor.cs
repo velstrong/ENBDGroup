@@ -15,7 +15,7 @@ using Sitecore.Web;
 using Sitecore.Configuration;
 using System.Text.RegularExpressions;
 
-namespace LivApp.Foundation.CMS.Pipelines
+namespace ENBDGroup.Foundation.Common.CMS.Pipelines
 {
     public class RobotsTxtProcessor : HttpRequestProcessor
     {

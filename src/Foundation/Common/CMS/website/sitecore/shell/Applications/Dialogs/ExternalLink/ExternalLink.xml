@@ -3,7 +3,7 @@
   <ExternalLink>
     <FormDialog Header="Insert External Link" Text="Enter the URL for the external website that you want to insert a link to and specify any additional properties for the link." OKButton="Insert">
 
-      <CodeBeside Type="LivApp.Foundation.CMS.Speak.Applications.ExternalLinkForm,LivApp.Foundation.CMS"/>
+      <CodeBeside Type="ENBDGroup.Foundation.Common.CMS.Speak.Applications.ExternalLinkForm,ENBDGroup.Foundation.Common.CMS"/>
 
       <GridPanel Class="scFormTable" CellPadding="2" Columns="2" Width="100%">
         <Label For="Text" GridPanel.NoWrap="true"><Literal Text="Link description:"/></Label>

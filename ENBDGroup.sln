@@ -18,6 +18,8 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Configuration", "Configuration", "{48A68BF7-0608-4AA9-9F36-809E2731150A}"
 	ProjectSection(SolutionItems) = preProject
 		.gitattributes = .gitattributes
+		gulp-config.js = gulp-config.js
+		gulpfile.js = gulpfile.js
 		NuGet.config = NuGet.config
 		README.md = README.md
 		sitecore.json = sitecore.json
@@ -211,7 +213,7 @@ Global
 		{FCCEB6F3-244C-4ACE-8EFB-6C35880FF3ED} = {22230011-E49F-4819-B72E-7B0CB5261C4E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		EnterpriseLibraryConfigurationToolBinariesPathV6 = packages\EnterpriseLibrary.Common.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.6.0.1304.0\lib\portable-net45+win+wp8;packages\EnterpriseLibrary.TransientFaultHandling.Caching.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.Data.6.0.1304.1\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.ServiceBus.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.WindowsAzure.Storage.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.Configuration.6.0.1304.0\lib\NET45
 		SolutionGuid = {845F548C-FD53-4C61-AB7F-953C2225A13B}
+		EnterpriseLibraryConfigurationToolBinariesPathV6 = packages\EnterpriseLibrary.Common.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.6.0.1304.0\lib\portable-net45+win+wp8;packages\EnterpriseLibrary.TransientFaultHandling.Caching.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.Data.6.0.1304.1\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.ServiceBus.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.WindowsAzure.Storage.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.Configuration.6.0.1304.0\lib\NET45
 	EndGlobalSection
 EndGlobal

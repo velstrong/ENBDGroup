@@ -11,7 +11,7 @@
         overflow: auto;
         }
       </Stylesheet>
-      <CodeBeside Type="LivApp.Foundation.CMS.Speak.Applications.JavascriptLinkForm,LivApp.Foundation.CMS"/>
+      <CodeBeside Type="ENBDGroup.Foundation.Common.CMS.Speak.Applications.JavascriptLinkForm,ENBDGroup.Foundation.Common.CMS"/>
 
       <GridPanel Class="scFormTable" CellPadding="2" Columns="2" Width="100%">
         <Label For="Text" GridPanel.NoWrap="true"><Literal Text="Link description:"/></Label>

@@ -11,7 +11,7 @@ using System.Collections.Specialized;
 using System.Web.UI.WebControls;
 using System.Xml;
 
-namespace LivApp.Foundation.CMS.Speak.Applications
+namespace ENBDGroup.Foundation.Common.CMS.Speak.Applications
 {
     public class ExternalLinkForm : LinkForm
     {

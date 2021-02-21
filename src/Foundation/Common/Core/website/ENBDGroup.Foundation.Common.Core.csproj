@@ -241,7 +241,7 @@
     <Compile Include="Utilities\UtilityMethods.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Config\Include\Foundation\Foundation.Core.RegisterContainer.config" />
+    <Content Include="App_Config\Include\Foundation\ENBDGroup.Foundation.Common.Core.RegisterContainer.config" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

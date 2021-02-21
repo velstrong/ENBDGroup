@@ -109,6 +109,8 @@ D:\Projects\ENBD\ENBDGroup\src\Foundation\Common\Content\website\bin\ENBDGroup.F
 D:\Projects\ENBD\ENBDGroup\src\Foundation\Common\Content\website\bin\ENBDGroup.Foundation.Common.Content.dll
 D:\Projects\ENBD\ENBDGroup\src\Foundation\Common\Content\website\bin\ENBDGroup.Foundation.Common.Content.pdb
 D:\Projects\ENBD\ENBDGroup\src\Foundation\Common\Content\website\bin\Castle.Core.dll
+D:\Projects\ENBD\ENBDGroup\src\Foundation\Common\Content\website\bin\ENBDGroup.Foundation.Common.Logging.dll
+D:\Projects\ENBD\ENBDGroup\src\Foundation\Common\Content\website\bin\ENBDGroup.Foundation.Common.Search.dll
 D:\Projects\ENBD\ENBDGroup\src\Foundation\Common\Content\website\bin\Glass.Mapper.dll
 D:\Projects\ENBD\ENBDGroup\src\Foundation\Common\Content\website\bin\Glass.Mapper.Sc.dll
 D:\Projects\ENBD\ENBDGroup\src\Foundation\Common\Content\website\bin\Glass.Mapper.Sc.Mvc.dll
@@ -159,6 +161,10 @@ D:\Projects\ENBD\ENBDGroup\src\Foundation\Common\Content\website\bin\System.Secu
 D:\Projects\ENBD\ENBDGroup\src\Foundation\Common\Content\website\bin\System.Security.Principal.Windows.dll
 D:\Projects\ENBD\ENBDGroup\src\Foundation\Common\Content\website\bin\System.Web.Http.dll
 D:\Projects\ENBD\ENBDGroup\src\Foundation\Common\Content\website\bin\System.Web.Http.WebHost.dll
+D:\Projects\ENBD\ENBDGroup\src\Foundation\Common\Content\website\bin\ENBDGroup.Foundation.Common.Logging.pdb
+D:\Projects\ENBD\ENBDGroup\src\Foundation\Common\Content\website\bin\ENBDGroup.Foundation.Common.Logging.dll.config
+D:\Projects\ENBD\ENBDGroup\src\Foundation\Common\Content\website\bin\ENBDGroup.Foundation.Common.Search.pdb
+D:\Projects\ENBD\ENBDGroup\src\Foundation\Common\Content\website\bin\ENBDGroup.Foundation.Common.Search.dll.config
 D:\Projects\ENBD\ENBDGroup\src\Foundation\Common\Content\website\bin\Castle.Core.xml
 D:\Projects\ENBD\ENBDGroup\src\Foundation\Common\Content\website\bin\Glass.Mapper.pdb
 D:\Projects\ENBD\ENBDGroup\src\Foundation\Common\Content\website\bin\Glass.Mapper.xml
@@ -208,13 +214,7 @@ D:\Projects\ENBD\ENBDGroup\src\Foundation\Common\Content\website\bin\System.Nume
 D:\Projects\ENBD\ENBDGroup\src\Foundation\Common\Content\website\bin\System.Runtime.CompilerServices.Unsafe.xml
 D:\Projects\ENBD\ENBDGroup\src\Foundation\Common\Content\website\bin\System.Web.Http.xml
 D:\Projects\ENBD\ENBDGroup\src\Foundation\Common\Content\website\bin\System.Web.Http.WebHost.xml
+D:\Projects\ENBD\ENBDGroup\src\Foundation\Common\Content\website\obj\Debug\ENBDGroup.Foundation.Common.Content.csprojAssemblyReference.cache
 D:\Projects\ENBD\ENBDGroup\src\Foundation\Common\Content\website\obj\Debug\ENBDGroup.Foundation.Common.Content.csproj.CopyComplete
 D:\Projects\ENBD\ENBDGroup\src\Foundation\Common\Content\website\obj\Debug\ENBDGroup.Foundation.Common.Content.dll
 D:\Projects\ENBD\ENBDGroup\src\Foundation\Common\Content\website\obj\Debug\ENBDGroup.Foundation.Common.Content.pdb
-D:\Projects\ENBD\ENBDGroup\src\Foundation\Common\Content\website\obj\Debug\ENBDGroup.Foundation.Common.Content.csprojAssemblyReference.cache
-D:\Projects\ENBD\ENBDGroup\src\Foundation\Common\Content\website\bin\ENBDGroup.Foundation.Common.Logging.dll
-D:\Projects\ENBD\ENBDGroup\src\Foundation\Common\Content\website\bin\ENBDGroup.Foundation.Common.Logging.pdb
-D:\Projects\ENBD\ENBDGroup\src\Foundation\Common\Content\website\bin\ENBDGroup.Foundation.Common.Logging.dll.config
-D:\Projects\ENBD\ENBDGroup\src\Foundation\Common\Content\website\bin\ENBDGroup.Foundation.Common.Search.dll
-D:\Projects\ENBD\ENBDGroup\src\Foundation\Common\Content\website\bin\ENBDGroup.Foundation.Common.Search.pdb
-D:\Projects\ENBD\ENBDGroup\src\Foundation\Common\Content\website\bin\ENBDGroup.Foundation.Common.Search.dll.config

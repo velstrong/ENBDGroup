@@ -10,9 +10,16 @@ D:\Projects\ENBDGroup\src\Foundation\Common\Serialization\website\obj\Debug\ENBD
 D:\Projects\ENBD\ENBDGroup\src\Foundation\Common\Serialization\website\bin\ENBDGroup.Foundation.Common.Serialization.dll.config
 D:\Projects\ENBD\ENBDGroup\src\Foundation\Common\Serialization\website\bin\ENBDGroup.Foundation.Common.Serialization.dll
 D:\Projects\ENBD\ENBDGroup\src\Foundation\Common\Serialization\website\bin\ENBDGroup.Foundation.Common.Serialization.pdb
+D:\Projects\ENBD\ENBDGroup\src\Foundation\Common\Serialization\website\bin\Configy.dll
+D:\Projects\ENBD\ENBDGroup\src\Foundation\Common\Serialization\website\bin\Kamsar.WebConsole.dll
+D:\Projects\ENBD\ENBDGroup\src\Foundation\Common\Serialization\website\bin\MicroCHAP.dll
 D:\Projects\ENBD\ENBDGroup\src\Foundation\Common\Serialization\website\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Projects\ENBD\ENBDGroup\src\Foundation\Common\Serialization\website\bin\Rainbow.dll
+D:\Projects\ENBD\ENBDGroup\src\Foundation\Common\Serialization\website\bin\Rainbow.Storage.Sc.dll
+D:\Projects\ENBD\ENBDGroup\src\Foundation\Common\Serialization\website\bin\Rainbow.Storage.Yaml.dll
+D:\Projects\ENBD\ENBDGroup\src\Foundation\Common\Serialization\website\bin\Unicorn.dll
 D:\Projects\ENBD\ENBDGroup\src\Foundation\Common\Serialization\website\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Projects\ENBD\ENBDGroup\src\Foundation\Common\Serialization\website\obj\Debug\ENBDGroup.Foundation.Common.Serialization.csprojAssemblyReference.cache
 D:\Projects\ENBD\ENBDGroup\src\Foundation\Common\Serialization\website\obj\Debug\ENBDGroup.Foundation.Common.Serialization.csproj.CopyComplete
 D:\Projects\ENBD\ENBDGroup\src\Foundation\Common\Serialization\website\obj\Debug\ENBDGroup.Foundation.Common.Serialization.dll
 D:\Projects\ENBD\ENBDGroup\src\Foundation\Common\Serialization\website\obj\Debug\ENBDGroup.Foundation.Common.Serialization.pdb
-

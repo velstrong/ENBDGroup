@@ -2,7 +2,7 @@
 using HtmlAgilityPack;
 using System.Web;
 
-namespace LivApp.Foundation.CMS.Helpers
+namespace ENBDGroup.Foundation.Common.CMS.Helpers
 {
     public static class RazorViewHelper
     {

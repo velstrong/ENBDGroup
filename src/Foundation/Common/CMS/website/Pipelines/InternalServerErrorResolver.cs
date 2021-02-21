@@ -10,7 +10,7 @@ using System.Text;
 using System.Web;
 using System.Web.Configuration;
 
-namespace LivApp.Foundation.CMS.Pipelines
+namespace ENBDGroup.Foundation.Common.CMS.Pipelines
 {
     public class InternalServerErrorResolver : ExceptionProcessor
     {

@@ -19,7 +19,7 @@ using Sitecore.Configuration;
 using Sitecore.Web;
 using System.Text.RegularExpressions;
 
-namespace LivApp.Foundation.CMS.Pipelines
+namespace ENBDGroup.Foundation.Common.CMS.Pipelines
 {
     public class SitemapXmlProcessor : HttpRequestProcessor
     {

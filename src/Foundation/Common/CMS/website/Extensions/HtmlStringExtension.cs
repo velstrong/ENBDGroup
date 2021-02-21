@@ -1,7 +1,7 @@
 ﻿using HtmlAgilityPack;
 using System.Web;
 
-namespace LivApp.Foundation.CMS.Extensions
+namespace ENBDGroup.Foundation.Common.CMS.Extensions
 {
     public static class HtmlStringExtension
     {

@@ -7,17 +7,17 @@ using Sitecore.Sites;
 using Sitecore.Web;
 using System;
 
-namespace LivApp.Foundation.CMS.Pipelines
+namespace ENBDGroup.Foundation.Common.CMS.Pipelines
 {
-    public class LivSiteResolver : SiteResolver
+    public class ENBDSiteResolver : SiteResolver
     {
-        public LivSiteResolver() : this(ServiceLocator.ServiceProvider.GetRequiredService<BaseSiteContextFactory>())
+        public ENBDSiteResolver() : this(ServiceLocator.ServiceProvider.GetRequiredService<BaseSiteContextFactory>())
         {
         }
-        public LivSiteResolver(BaseSiteContextFactory siteContextFactory) : base(siteContextFactory)
+        public ENBDSiteResolver(BaseSiteContextFactory siteContextFactory) : base(siteContextFactory)
         {
         }
-        protected LivSiteResolver(BaseSiteContextFactory siteContextFactory, bool enableSiteConfigFiles) : base(siteContextFactory, enableSiteConfigFiles)
+        protected ENBDSiteResolver(BaseSiteContextFactory siteContextFactory, bool enableSiteConfigFiles) : base(siteContextFactory, enableSiteConfigFiles)
         {
         }
         public override void Process(HttpRequestArgs args)
