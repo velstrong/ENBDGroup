@@ -1,0 +1,14 @@
+﻿---
+ID: "19b681ee-7cd1-48e2-8786-b619855ed235"
+Parent: "d9232e2c-9347-4c64-9ea9-89ab6b5a4965"
+Template: "e269fbb5-3750-427a-9149-7aa950b49301"
+Path: /sitecore/templates/Foundation/Test/Test
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20210222T083931Z
