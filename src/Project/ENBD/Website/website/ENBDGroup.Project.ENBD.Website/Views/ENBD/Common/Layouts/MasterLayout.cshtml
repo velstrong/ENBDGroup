@@ -1,0 +1,23 @@
+﻿@using Sitecore.Mvc
+@using Sitecore;
+@using Sitecore.Data;
+@using System.Web.Optimization
+@{
+    Layout = "MvcOuterLayout.cshtml";
+    var isEnabled = System.Configuration.ConfigurationManager.AppSettings["BundleEnableOptimizations"] == "1" ? true : false;
+}
+<!-- header -->
+<header class="header-sticky header-light headroom--pinned">
+    @Html.Sitecore().Placeholder("header")
+</header>
+<!-- header -->
+
+@Html.Sitecore().Placeholder("main")
+
+<!-- Footer  -->
+<footer class="separator-top">
+    @Html.Sitecore().Placeholder("footer")
+</footer>
+<!-- Footer  -->
+
+@*@Scripts.Render("~/bundles/scripts.js")*@

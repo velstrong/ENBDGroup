@@ -12,6 +12,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Caching;
 using Sitecore;
+using Sitecore.Links.UrlBuilders;
 
 namespace ENBDGroup.Foundation.Common.Redirect.Pipelines.HttpRequestBegin
 {
@@ -31,7 +32,7 @@ namespace ENBDGroup.Foundation.Common.Redirect.Pipelines.HttpRequestBegin
         {
             get
             {
-                return string.Format("{0}AllRedirectMappings-{1}-{2}-{3}", "LivApp-Foundation-Redirects-", Context.Database.Name, Context.Site.Name,Context.Language.Name);
+                return string.Format("{0}AllRedirectMappings-{1}-{2}-{3}", "ENBDGroup-Foundation-Redirects-", Context.Database.Name, Context.Site.Name, Context.Language.Name);
             }
         }
         protected virtual string GetRedirectUrl(Item redirectItem)
@@ -47,7 +48,7 @@ namespace ENBDGroup.Foundation.Common.Redirect.Pipelines.HttpRequestBegin
                 else
                 {
                     SiteInfo siteInfo = Context.Site.SiteInfo;
-                    UrlOptions defaultOptions = UrlOptions.DefaultOptions;
+                    ItemUrlBuilderOptions defaultOptions = new ItemUrlBuilderOptions();
                     defaultOptions.Site = SiteContextFactory.GetSiteContext(siteInfo.Name);
                     defaultOptions.AlwaysIncludeServerUrl = true;
                     str = string.Concat(LinkManager.GetItemUrl(item.TargetItem, defaultOptions), (string.IsNullOrEmpty(item.QueryString) ? "" : string.Concat("?", item.QueryString)));
@@ -83,7 +84,7 @@ namespace ENBDGroup.Foundation.Common.Redirect.Pipelines.HttpRequestBegin
         {
             get
             {
-                return string.Format("{0}ResolvedRedirect-{1}-{2}-{3}", "LivApp-Foundation-Redirects-", Context.Database.Name, Context.Site.Name,Context.Language.Name);
+                return string.Format("{0}ResolvedRedirect-{1}-{2}-{3}", "ENBDGroup-Foundation-Redirects-", Context.Database.Name, Context.Site.Name, Context.Language.Name);
             }
         }
         protected virtual Redirect GetResolvedMapping(string ItemId)

@@ -1,0 +1,50 @@
+﻿@using ENBDGroup.Foundation.Common.Core.Providers
+@using Sitecore.Mvc
+@using Sitecore.Mvc.Presentation
+@{
+    // Number of Columns
+    var parameterTemplatesProvider = new ParameterTemplatesProvider();
+    var columns = parameterTemplatesProvider.GetParameter<int>(RenderingContext.Current.Rendering.RenderingItem, "columns");
+    if (columns == 0)
+    {
+        columns = 2;
+    }
+}
+
+@Html.Sitecore().DynamicPlaceholder("gridcolumn", CreateWrapper, columns)
+
+@functions
+{
+    private readonly ICssClassProvider _cssClassProvider = new CssClassRepository();
+    private readonly IParameterTemplatesProvider _parameterTemplatesService = new ParameterTemplatesProvider();
+
+    HtmlString CreateWrapper(HtmlString htmlString, DynamicPlaceholderRenderContext context)
+    {
+        var isFirstColumn = context.Index == 0;
+        var isLastColumn = context.Index == context.PlaceholdersCount - 1;
+        var hideRow = _parameterTemplatesService.GetParameter<bool>(context, "Hide Row");
+
+        // Make column
+        var placeholderContainer = new TagBuilder("div");
+        placeholderContainer.AddCssClass(_cssClassProvider.GetInlineCssClasses(context, "Column Css Classes"));
+        // Put the placeholder inside the container
+        placeholderContainer.InnerHtml = htmlString.ToHtmlString();
+
+        // Output HTML
+        var outputHtml = placeholderContainer.ToString(TagRenderMode.Normal);
+
+        // Row HTML
+        if (isFirstColumn && (!hideRow || Sitecore.Context.PageMode.IsExperienceEditorEditing))
+        {
+            var rowHtml = "<div ";
+            if (!hideRow)
+                rowHtml += "class=\"" + _cssClassProvider.GetInlineCssClasses(context, "Row Css Classes") + "\"";
+            rowHtml += ">";
+            outputHtml = rowHtml + outputHtml;
+        }
+        if (isLastColumn && (!hideRow || Sitecore.Context.PageMode.IsExperienceEditorEditing))
+            outputHtml += "</div>";
+
+        return new HtmlString(outputHtml);
+    }
+}

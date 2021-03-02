@@ -1,0 +1,214 @@
+﻿@using ENBDGroup.Foundation.Common.Core.Providers
+@using Sitecore.Mvc
+@using Sitecore.Mvc.Presentation
+@using ENBDGroup.Foundation.Common.Core.Models
+@using Sitecore.Mvc
+@using Sitecore.Data.Items;
+@using ENBDGroup.Feature.Common.Website.Entities.DynamicRender.Models;
+@using ENBDGroup.Foundation.Common.Core.Extensions;
+@using System.Text;
+@{
+    IParameterTemplatesProvider _parameterTemplatesService = new ParameterTemplatesProvider();
+    var rc = RenderingContext.CurrentOrNull;
+    if (rc != null)
+    {
+        var parms = rc.Rendering.Parameters;
+        var renderingVariantId = parms["Rendering Variant"];
+        var dataSourceId = rc.Rendering.DataSource;
+        Item dataSourceItem = null;
+        Item renderingVariantItem = null;
+        if (!string.IsNullOrEmpty(dataSourceId) && !string.IsNullOrEmpty(renderingVariantId))
+        {
+            dataSourceItem = Sitecore.Context.Database.GetItem(dataSourceId);
+            renderingVariantItem = Sitecore.Context.Database.GetItem(renderingVariantId);
+        }
+        if (dataSourceItem != null && renderingVariantItem != null)
+        {
+            var finalRendering = new StringBuilder();
+            foreach (Item tag in renderingVariantItem.GetChildren())
+            {
+                var tagValue = tag.GetFieldValue("Tag");
+                string fieldName = tag.GetFieldValue("Field Name");
+                string contentId = tag.GetFieldValue("Content Id");
+                string cssClass = tag.GetFieldValue("Css Class");
+                if (tag.TemplateID == DynamicRenderConstant.HtmlTagTemplateId)
+                {
+                    if (!string.IsNullOrEmpty(tagValue))
+                    {
+                        var tagBuilder = new TagBuilder(tagValue);
+                        if (!string.IsNullOrEmpty(cssClass))
+                        {
+                            tagBuilder.AddCssClass(tag.GetFieldValue("Css Class"));
+                        }
+                        if (!string.IsNullOrEmpty(contentId))
+                        {
+                            tagBuilder.Attributes["id"] = contentId;
+                        }
+                        tagBuilder.InnerHtml = (!string.IsNullOrEmpty(fieldName) ? dataSourceItem.GetFieldValue(fieldName) : "")
+                            + GenerateHtmlTag(tag, dataSourceItem).ToString();
+                        finalRendering.Append(tagBuilder.ToString(TagRenderMode.Normal));
+                    }
+                }
+                if (tag.TemplateID == DynamicRenderConstant.ImageTagTemplateId)
+                {
+                    var tagBuilder = new TagBuilder("img");
+                    if (!string.IsNullOrEmpty(cssClass))
+                    {
+                        tagBuilder.AddCssClass(tag.GetFieldValue("Css Class"));
+                    }
+                    if (!string.IsNullOrEmpty(contentId))
+                    {
+                        tagBuilder.Attributes["id"] = contentId;
+                    }
+                    if (!string.IsNullOrEmpty(fieldName))
+                    {
+                        tagBuilder.Attributes["src"] = dataSourceItem.GetImageFieldURL(fieldName);
+                    }
+                    finalRendering.Append(tagBuilder.ToString(TagRenderMode.Normal));
+                }
+                if (tag.TemplateID == DynamicRenderConstant.LinkTagTemplateId)
+                {
+                    var tagBuilder = new TagBuilder("a");
+                    if (!string.IsNullOrEmpty(cssClass))
+                    {
+                        tagBuilder.AddCssClass(tag.GetFieldValue("Css Class"));
+                    }
+                    if (!string.IsNullOrEmpty(contentId))
+                    {
+                        tagBuilder.Attributes["id"] = contentId;
+                    }
+                    if (!string.IsNullOrEmpty(fieldName))
+                    {
+                        Sitecore.Data.Fields.LinkField linkFieldItem = dataSourceItem.Fields[fieldName];
+                        tagBuilder.Attributes["href"] = dataSourceItem.GetLinkFieldValue(fieldName);
+                        if (linkFieldItem != null)
+                        {
+                            string target = linkFieldItem.Target;
+                            if (!string.IsNullOrEmpty(target))
+                            {
+                                tagBuilder.Attributes["target"] = target;
+                            }
+                            tagBuilder.InnerHtml = linkFieldItem.Text + GenerateImageTag(tag, dataSourceItem).ToString();
+                        }
+                    }
+                    finalRendering.Append(tagBuilder.ToString(TagRenderMode.Normal));
+                }
+            }
+            @Html.Raw(finalRendering.ToString());
+        }
+    }
+}
+@functions{
+    HtmlString GenerateImageTag(Item tagItem, Item dataSourceItem)
+    {
+        var finalRendering = new StringBuilder();
+        var hasChildren = tagItem.Children != null && tagItem.Children.Count > 0;
+        if (hasChildren)
+        {
+            foreach (Item tag in tagItem.GetChildren())
+            {
+                string fieldName = tag.GetFieldValue("Field Name");
+                string contentId = tag.GetFieldValue("Content Id");
+                string cssClass = tag.GetFieldValue("Css Class");
+                if (tag.TemplateID == DynamicRenderConstant.ImageTagTemplateId)
+                {
+                    var tagBuilder = new TagBuilder("img");
+                    if (!string.IsNullOrEmpty(cssClass))
+                    {
+                        tagBuilder.AddCssClass(tag.GetFieldValue("Css Class"));
+                    }
+                    if (!string.IsNullOrEmpty(contentId))
+                    {
+                        tagBuilder.Attributes["id"] = contentId;
+                    }
+                    if (!string.IsNullOrEmpty(fieldName))
+                    {
+                        tagBuilder.Attributes["src"] = dataSourceItem.GetImageFieldURL(fieldName);
+                    }
+                    finalRendering.Append(tagBuilder.ToString(TagRenderMode.Normal));
+                }
+            }
+        }
+        return new HtmlString(finalRendering.ToString());
+    }
+    HtmlString GenerateHtmlTag(Item tagItem, Item dataSourceItem)
+    {
+        var finalRendering = new StringBuilder();
+        var hasChildren = tagItem.Children != null && tagItem.Children.Count > 0;
+        if (hasChildren)
+        {
+            foreach (Item tag in tagItem.GetChildren())
+            {
+                var tagValue = tag.GetFieldValue("Tag");
+                string fieldName = tag.GetFieldValue("Field Name");
+                string contentId = tag.GetFieldValue("Content Id");
+                string cssClass = tag.GetFieldValue("Css Class");
+                if (tag.TemplateID == DynamicRenderConstant.HtmlTagTemplateId)
+                {
+
+                    if (!string.IsNullOrEmpty(tagValue))
+                    {
+                        var tagBuilder = new TagBuilder(tagValue);
+                        if (!string.IsNullOrEmpty(cssClass))
+                        {
+                            tagBuilder.AddCssClass(tag.GetFieldValue("Css Class"));
+                        }
+                        if (!string.IsNullOrEmpty(contentId))
+                        {
+                            tagBuilder.Attributes["id"] = contentId;
+                        }
+                        tagBuilder.InnerHtml = (!string.IsNullOrEmpty(fieldName) ? dataSourceItem.GetFieldValue(fieldName) : "")
+                            + GenerateHtmlTag(tag, dataSourceItem).ToString();
+                        finalRendering.Append(tagBuilder.ToString(TagRenderMode.Normal));
+                    }
+                }
+                if (tag.TemplateID == DynamicRenderConstant.ImageTagTemplateId)
+                {
+                    var tagBuilder = new TagBuilder("img");
+                    if (!string.IsNullOrEmpty(cssClass))
+                    {
+                        tagBuilder.AddCssClass(tag.GetFieldValue("Css Class"));
+                    }
+                    if (!string.IsNullOrEmpty(contentId))
+                    {
+                        tagBuilder.Attributes["id"] = contentId;
+                    }
+                    if (!string.IsNullOrEmpty(fieldName))
+                    {
+                        tagBuilder.Attributes["src"] = dataSourceItem.GetImageFieldURL(fieldName);
+                    }
+                    finalRendering.Append(tagBuilder.ToString(TagRenderMode.Normal));
+                }
+                if (tag.TemplateID == DynamicRenderConstant.LinkTagTemplateId)
+                {
+                    var tagBuilder = new TagBuilder("a");
+                    if (!string.IsNullOrEmpty(cssClass))
+                    {
+                        tagBuilder.AddCssClass(tag.GetFieldValue("Css Class"));
+                    }
+                    if (!string.IsNullOrEmpty(contentId))
+                    {
+                        tagBuilder.Attributes["id"] = contentId;
+                    }
+                    if (!string.IsNullOrEmpty(fieldName))
+                    {
+                        Sitecore.Data.Fields.LinkField linkFieldItem = dataSourceItem.Fields[fieldName];
+                        tagBuilder.Attributes["href"] = dataSourceItem.GetLinkFieldValue(fieldName);
+                        if (linkFieldItem != null)
+                        {
+                            string target = linkFieldItem.Target;
+                            if (!string.IsNullOrEmpty(target))
+                            {
+                                tagBuilder.Attributes["target"] = target;
+                            }
+                            tagBuilder.InnerHtml = linkFieldItem.Text + GenerateImageTag(tag, dataSourceItem).ToString();
+                        }
+                    }
+                    finalRendering.Append(tagBuilder.ToString(TagRenderMode.Normal));
+                }
+            }
+        }
+        return new HtmlString(finalRendering.ToString());
+
+    }
+}

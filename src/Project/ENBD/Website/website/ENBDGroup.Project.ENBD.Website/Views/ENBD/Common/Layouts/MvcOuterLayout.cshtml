@@ -1,0 +1,76 @@
+﻿@using Sitecore.Mvc
+@using Sitecore;
+@using Sitecore.Data;
+@using System.Web.Optimization
+@using Sitecore.ExperienceForms.Mvc.Html
+@using ENBDGroup.Foundation.Common.Core.Extensions
+@using ENBDGroup.Foundation.Common.Core.Utilities
+@{
+    Layout = null;
+    //var settingsItem = SitecoreUtil.GetItemByPath(Sitecore.Context.Site.RootPath);
+    //var isRestricted = false;
+}
+<!DOCTYPE html>
+<html lang="@Sitecore.Context.Language.Name" dir="@(Sitecore.Context.Language.Name=="ar"?"rtl":"ltr")" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    @*@if (settingsItem != null)
+        {
+            var restrictedDomains = settingsItem["Restricted Domains"];
+            var xOriginal = System.Web.HttpContext.Current.Request.Headers["X-ORIGINAL-HOST"];
+
+            if (!string.IsNullOrEmpty(restrictedDomains) && !string.IsNullOrEmpty(xOriginal))
+            {
+                if (restrictedDomains.Contains(xOriginal))
+                {
+                    isRestricted = true;
+
+                    @Html.Raw(settingsItem["GTM Head Script"])
+                }
+            }
+        }*@
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>@Html.Sitecore().Field("Page Title", new { DisableWebEdit = true })</title>
+    <meta name="description" content="@Html.Sitecore().Field("Meta Description",new { DisableWebEdit = true })" />
+    <meta name="keywords" content="@Html.Sitecore().Field("Meta Keywords",new { DisableWebEdit = true })" />
+    <meta property="og:url" content="@SitecoreUtil.GetItemUrlWithServer(Sitecore.Context.Item)" />
+    <meta property="og:title" content="@Html.Sitecore().Field("OG Title",new { DisableWebEdit = true })" />
+    <meta property="og:description" content="@Html.Sitecore().Field("OG Description",new { DisableWebEdit = true })" />
+    <meta property="og:image" content="@Sitecore.Context.Item.GetImageFieldURL("OG Image")" />
+    <meta name="twitter:title" content="@Html.Sitecore().Field("Twitter Title",new { DisableWebEdit = true })">
+    <meta name="twitter:description" content="@Html.Sitecore().Field("Twitter Description",new { DisableWebEdit = true })">
+    <meta name="twitter:image" content="@Sitecore.Context.Item.GetImageFieldURL("Twitter Image")">
+    <meta name="twitter:site" content="@Html.Sitecore().Field("Twitter Site",new { DisableWebEdit = true })">
+    <meta name="twitter:creator" content="@Html.Sitecore().Field("Twitter Creator",new { DisableWebEdit = true })">
+    @Html.RenderFormStyles()
+    @Html.RenderFormScripts()
+    @*<link rel="stylesheet" href="/assets/css/vendor.css" />*@
+
+    @*@if (settingsItem != null)
+        {
+            <link rel="icon" type="image/png" href="@settingsItem.GetImageFieldURL("Fav Icon")">
+        }*@
+
+    @*@if (Sitecore.Context.Language.Name == "ar")
+        {
+
+            @Styles.Render("~/bundles/minifiedcssrtl.css")
+        }
+        else
+        {
+            @Styles.Render("~/bundles/minifiedcss.css")
+        }
+
+        @Scripts.Render("~/bundles/headscripts.js")
+        <link rel="stylesheet" type="text/css"  href="/assets/css/font-awesome.min.css" media="all">
+        <link rel="stylesheet" type="text/css" href="/assets/css/fonts.min.css" media="all">*@
+</head>
+<body>
+    @*@if (settingsItem != null && isRestricted)
+        {
+            @Html.Raw(settingsItem["GTM Body Script"])
+        }*@
+
+    @RenderBody()
+</body>
+</html>

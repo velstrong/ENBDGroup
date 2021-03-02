@@ -163,3 +163,6 @@ D:\Projects\ENBD\ENBDGroup\src\Foundation\Common\CMS\website\obj\Debug\ENBDGroup
 D:\Projects\ENBD\ENBDGroup\src\Foundation\Common\CMS\website\obj\Debug\ENBDGroup.Foundation.Common.CMS.csproj.CopyComplete
 D:\Projects\ENBD\ENBDGroup\src\Foundation\Common\CMS\website\obj\Debug\ENBDGroup.Foundation.Common.CMS.dll
 D:\Projects\ENBD\ENBDGroup\src\Foundation\Common\CMS\website\obj\Debug\ENBDGroup.Foundation.Common.CMS.pdb
+D:\Projects\ENBD\ENBDGroup\src\Foundation\Common\CMS\website\bin\WebActivatorEx.dll
+D:\Projects\ENBD\ENBDGroup\src\Foundation\Common\CMS\website\bin\Sitecore.Web.dll
+D:\Projects\ENBD\ENBDGroup\src\Foundation\Common\CMS\website\bin\Sitecore.Web.xml
